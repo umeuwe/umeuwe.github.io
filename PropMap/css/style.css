@@ -1,0 +1,148 @@
+/* Stylesheet written by Rich Donohue and Carl Sack for Time Series Proportional Symbol Maps with Leaflet and JQuery */
+
+body {
+    font-family: sans-serif;
+}
+h2 {
+    font-size: 1.2em;
+    margin-top: 3px;
+}
+h2,div, span {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#GMR {
+    background-image:url("../img/NYC.jpg");
+    background-size:cover;
+    height:100%;
+    max-width:1400px;
+    background-repeat:no-repeat;
+    padding-top:none;
+    padding-left:none;
+    padding-right:none;
+    margin:none;
+}
+
+
+#title {
+    font: 24px "Rockwell Extra Bold";
+    font-style: bold;
+    color: white;
+}
+#titlebox {
+    position:fixed;
+    top:15px;
+    left:49%;
+    background-color:black;
+    border-style:solid;
+    border-color:gray;
+    border-width:4px;
+    box-shadow: 15px 15px 25px #000111;
+
+}
+#text {
+    position:fixed;
+    top:145px;
+    background-color:gray;
+    opacity:.95;
+    max-width:200px;
+    min-width:200px;
+    border-style:solid;
+    border-width:3px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-top:none;
+    z-index:3;
+
+}
+#text ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+#text li{
+    padding:5px;
+}
+#heading{
+    font: 26px "Rockwell Extra Bold";
+    font-style: bold;
+    color: black;
+}
+#credit {
+    font: 11px "Courier New";
+    position: fixed;
+    right:25px;
+    bottom:25px;
+    color: white;
+    z-index:1;
+}
+#wrapper {
+    width: 750px;
+    margin: 10px auto;
+}
+#map {
+    top:60px;
+    height: 650px;
+	margin: 10px auto 10px;
+    border: 5px solid white;
+    box-shadow: 15px 15px 25px #000111;
+    z-index:2;
+}
+.legend, .temporal-legend, .range-legend {
+    padding: 6px 10px;
+    font: 14px "Arial Black", Helvetica, sans-serif;
+    background: rgba(225,225,225,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+#legendTitle {
+    text-align: center;
+    margin-bottom: 15px;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.symbolsContainer {
+    float: left;
+	margin-left: 50px;
+}
+.legendCircle {
+     border-radius:50%; 
+     border: 1px solid #000000; 
+     background: rgba(0,0,0,0.3);
+	 display: inline-block;
+}
+.legendValue {
+    position: absolute;
+    right: 12px;
+    font: 14px "Arial Black", sans-serif;
+    font-weight: bold;
+}
+.range-slider {
+    width: 150px;
+    background-color: none;
+    color: black;
+}
+.price-slider {
+    width: 200px;
+    background-color: none;
+    color: black;
+}
+.temporal-legend {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: bold;
+    background-size: 20px;
+}
+.price-legend {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    background-size: 20px;
+}
